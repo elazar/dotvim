@@ -8,4 +8,7 @@ map <C-y> :FZF<CR>
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 map <C-n> :NERDTreeToggle<CR>
 
+" vim-sensible
+Plug 'tpope/vim-sensible'
+
 call plug#end()
