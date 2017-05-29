@@ -12,6 +12,9 @@ map <C-y> :FZF<CR>
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 map <C-n> :NERDTreeToggle<CR>
 
+" vim-easymotion
+Plug 'easymotion/vim-easymotion'
+
 " vim-gitgutter
 Plug 'airblade/vim-gitgutter'
 
