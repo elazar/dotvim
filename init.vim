@@ -12,6 +12,9 @@ map <C-y> :FZF<CR>
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 map <C-n> :NERDTreeToggle<CR>
 
+" vim-gitgutter
+Plug 'airblade/vim-gitgutter'
+
 " vim-sensible
 Plug 'tpope/vim-sensible'
 
