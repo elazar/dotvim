@@ -18,6 +18,20 @@ Plug 'easymotion/vim-easymotion'
 " vim-gitgutter
 Plug 'airblade/vim-gitgutter'
 
+" vim-markdown
+Plug 'tpope/vim-markdown', { 'for': 'markdown' }
+
+" Highlight fenced code in Markdown
+" Map prism.js languages to vim filetypes
+let g:markdown_fenced_languages = [
+    \ 'bash=sh',
+    \ 'ini=dosini',
+    \ 'javascript',
+    \ 'makefile=make',
+    \ 'markup=html',
+    \ 'php',
+    \ ]
+
 " vim-sensible
 Plug 'tpope/vim-sensible'
 
