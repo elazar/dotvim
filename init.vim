@@ -24,6 +24,9 @@ Plug 'airblade/vim-gitgutter'
 " vim-markdown
 Plug 'tpope/vim-markdown', { 'for': 'markdown' }
 
+" vim-mustache-handlebars
+Plug 'mustache/vim-mustache-handlebars'
+
 " Highlight fenced code in Markdown
 " Map prism.js languages to vim filetypes
 let g:markdown_fenced_languages = [
