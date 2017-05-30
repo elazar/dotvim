@@ -36,6 +36,7 @@ let g:markdown_fenced_languages = [
     \ 'makefile=make',
     \ 'markup=html',
     \ 'php',
+    \ 'ruby',
     \ ]
 
 " vim-sensible
