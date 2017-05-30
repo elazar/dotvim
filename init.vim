@@ -4,6 +4,9 @@ call plug#begin('~/.vim/plugins')
 Plug 'w0rp/ale'
 let g:ale_linters = {'javascript': ['eslint']}
 
+" editorconfig
+Plug 'editorconfig/editorconfig-vim'
+
 " fzf
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 map <C-y> :FZF<CR>
