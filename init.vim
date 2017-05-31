@@ -44,6 +44,7 @@ Plug 'vim-pandoc/vim-pandoc-syntax', { 'for': 'markdown.pandoc' }
 augroup pandoc_syntax
     au! BufNewFile,BufFilePre,BufRead *.markdown set filetype=markdown.pandoc
 augroup END
+let g:pandoc#syntax#conceal#use = 0
 
 " vim-sensible
 Plug 'tpope/vim-sensible'
