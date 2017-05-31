@@ -39,6 +39,12 @@ let g:markdown_fenced_languages = [
 " vim-mustache-handlebars
 Plug 'mustache/vim-mustache-handlebars'
 
+" vim-pandoc-syntax
+Plug 'vim-pandoc/vim-pandoc-syntax'
+augroup pandoc_syntax
+    au! BufNewFile,BufFilePre,BufRead *.markdown set filetype=markdown.pandoc
+augroup END
+
 " vim-sensible
 Plug 'tpope/vim-sensible'
 
