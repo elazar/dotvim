@@ -21,6 +21,9 @@ Plug 'easymotion/vim-easymotion'
 " vim-gitgutter
 Plug 'airblade/vim-gitgutter'
 
+" vim-commentary
+Plug 'tpope/vim-commentary'
+
 " vim-markdown
 Plug 'tpope/vim-markdown', { 'for': 'markdown' }
 
