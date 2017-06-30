@@ -11,9 +11,8 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 map <C-y> :FZF<CR>
 
-" NERDtree
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-map <C-n> :NERDTreeToggle<CR>
+" vim-filebeagle
+Plug 'jeetsukumaran/vim-filebeagle'
 
 " vim-easymotion
 Plug 'easymotion/vim-easymotion'
