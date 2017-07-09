@@ -7,9 +7,9 @@ let g:ale_linters = {'javascript': ['eslint']}
 " editorconfig
 Plug 'editorconfig/editorconfig-vim'
 
-" fzf
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-map <C-y> :FZF<CR>
+" fzy
+Plug 'cloudhead/neovim-fuzzy'
+nnoremap <C-y> :FuzzyOpen<CR>
 
 " vim-filebeagle
 Plug 'jeetsukumaran/vim-filebeagle'
