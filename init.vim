@@ -1,5 +1,14 @@
 call plug#begin('~/.vim/plugins')
 
+" vim-airline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+let g:airline_theme='base16_monokai'
+let g:airline#extensions#tabline#enabled = 1
+
+" Base16
+Plug 'chriskempson/base16-vim'
+
 " ALE
 Plug 'w0rp/ale'
 let g:ale_linters = {'javascript': ['eslint']}
