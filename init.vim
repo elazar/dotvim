@@ -1,5 +1,8 @@
 call plug#begin('~/.vim/plugins')
 
+" phpcd.vim
+Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
+
 " vim-airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
