@@ -1,5 +1,8 @@
 call plug#begin('~/.vim/plugins')
 
+" vim-unimpaired
+Plug 'tpope/vim-unimpaired'
+
 " phpcd.vim
 Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
 
