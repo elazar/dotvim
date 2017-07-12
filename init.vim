@@ -6,7 +6,7 @@ Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
 " vim-airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-let g:airline_theme='base16_monokai'
+let g:airline_theme='base16_flat'
 let g:airline#extensions#tabline#enabled = 1
 set noru noshowmode
 
