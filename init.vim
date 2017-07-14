@@ -11,7 +11,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 let g:airline_theme='base16_flat'
 let g:airline#extensions#tabline#enabled = 1
-set noru noshowmode
+set noruler noshowmode
 
 " Base16
 Plug 'chriskempson/base16-vim'
@@ -70,7 +70,10 @@ Plug 'tpope/vim-sensible'
 call plug#end()
 
 " tabs and spaces
-set ts=4 sts=4 sw=4 expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
 
 " line numbers
 set relativenumber
