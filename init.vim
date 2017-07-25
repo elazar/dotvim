@@ -75,5 +75,7 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 
+au BufNewFile,BufFilePre,BufRead *.yaml set tabstop=2 softtabstop=2 shiftwidth=2
+
 " line numbers
 set relativenumber
