@@ -1,5 +1,8 @@
 call plug#begin('~/.vim/plugins')
 
+" vim-code-dark
+Plug 'tomasiser/vim-code-dark'
+
 " vim-unimpaired
 Plug 'tpope/vim-unimpaired'
 
@@ -9,12 +12,9 @@ Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
 " vim-airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-let g:airline_theme='base16_flat'
+let g:airline_theme = 'codedark'
 let g:airline#extensions#tabline#enabled = 1
 set noruler noshowmode
-
-" Base16
-Plug 'chriskempson/base16-vim'
 
 " ALE
 Plug 'w0rp/ale'
@@ -68,6 +68,8 @@ let g:pandoc#syntax#conceal#use = 0
 Plug 'tpope/vim-sensible'
 
 call plug#end()
+
+colorscheme codedark
 
 " tabs and spaces
 set tabstop=4
