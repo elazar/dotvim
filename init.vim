@@ -51,6 +51,7 @@ let g:markdown_fenced_languages = [
     \ 'markup=html',
     \ 'php',
     \ 'ruby',
+    \ 'sql',
     \ ]
 
 " vim-mustache-handlebars
