@@ -57,11 +57,13 @@ let g:markdown_fenced_languages = [
 " vim-mustache-handlebars
 Plug 'mustache/vim-mustache-handlebars'
 
-" vim-pandoc-syntax
-Plug 'vim-pandoc/vim-pandoc-syntax', { 'for': 'markdown.pandoc' }
-augroup pandoc_syntax
-    au! BufNewFile,BufFilePre,BufRead *.markdown set filetype=markdown.pandoc
-augroup END
+" vim-pandoc
+Plug 'vim-pandoc/vim-pandoc'
+Plug 'vim-pandoc/vim-pandoc-syntax'
+au BufNewFile,BufFilePre,BufRead *.markdown set filetype=markdown.pandoc
+let g:pandoc#filetypes#pandoc_markdown = 0
+let g:pandoc#syntax#codeblocks#embeds#langs = ['php']
+let g:pandoc#modules#disabled = ['folding']
 let g:pandoc#syntax#conceal#use = 0
 
 " vim-sensible
