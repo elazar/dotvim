@@ -69,6 +69,10 @@ let g:pandoc#syntax#conceal#use = 0
 " vim-sensible
 Plug 'tpope/vim-sensible'
 
+" emmet-vim
+Plug 'mattn/emmet-vim'
+let g:user_emmet_leader_key='<C-t>'
+
 call plug#end()
 
 colorscheme codedark
