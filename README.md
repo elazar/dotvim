@@ -10,7 +10,14 @@ Clone this repository locally.
 git clone git@github.com:elazar/dotvim.git ~/.vim
 ```
 
-Then, open vim and install plugins using [vim-plug](https://github.com/junegunn/vim-plug).
+[Install vim-plug](https://github.com/junegunn/vim-plug#installation).
+
+```sh
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+Open Neovim and install plugins.
 
 ```
 :PlugInstall
