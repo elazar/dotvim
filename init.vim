@@ -28,6 +28,8 @@ nnoremap <C-p> :FuzzyOpen<CR>
 
 Plug 'easymotion/vim-easymotion'
 
+Plug 'Townk/vim-autoclose'
+
 """""""""""""""""""""""""""""""
 " Language features and support
 """""""""""""""""""""""""""""""
