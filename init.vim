@@ -42,6 +42,7 @@ let g:ale_linters = {'javascript': ['eslint']}
 Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
 
 Plug 'tpope/vim-markdown', { 'for': 'markdown' }
+Plug 'jtratner/vim-flavored-markdown'
 
 " Map prism.js languages to vim filetypes
 let g:markdown_fenced_languages = [
