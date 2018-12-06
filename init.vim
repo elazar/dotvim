@@ -61,9 +61,6 @@ map <Leader>k <Plug>(easymotion-k)
 " \j navigate to a line below the cursor
 " \k navigate to a line above the cursor
 
-" Smartly insert closing characters for opening characters
-Plug 'Townk/vim-autoclose'
-
 """""""""""""""""""""""""""""""
 " Language features and support
 """""""""""""""""""""""""""""""
