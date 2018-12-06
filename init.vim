@@ -95,9 +95,6 @@ let g:markdown_fenced_languages = [
     \ 'sql',
     \ ]
 
-" Mustache/Handlebars support, used by work
-Plug 'mustache/vim-mustache-handlebars'
-
 " Pandoc Markdown support, used by book editor
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
