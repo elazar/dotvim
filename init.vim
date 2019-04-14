@@ -1,5 +1,5 @@
 " Load plugins using vim-plug
-call plug#begin('~/.vim/plugins')
+call plug#begin('~/.config/nvim/plugins')
 
 """""""""""""""""""""""""""""""""""""""""""""""""
 " User interface
