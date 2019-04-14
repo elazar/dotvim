@@ -100,7 +100,7 @@ Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 au BufNewFile,BufFilePre,BufRead *.markdown set filetype=markdown.pandoc
 let g:pandoc#filetypes#pandoc_markdown = 0
-let g:pandoc#syntax#codeblocks#embeds#langs = ['php']
+let g:pandoc#syntax#codeblocks#embeds#langs = ['bash', 'html', 'php', 'yaml']
 let g:pandoc#modules#disabled = ['folding']
 let g:pandoc#syntax#conceal#use = 0
 
