@@ -47,10 +47,10 @@ Plug 'tpope/vim-commentary'
 " gcc comment out a line, takes a count
 " gcap comment out a target (e.g. gcap comments out a paragraph)
 
-" Fuzzy file finding using fzy
-Plug 'cloudhead/neovim-fuzzy'
-nnoremap <C-p> :FuzzyOpen<CR>
-" Ctrl + p open the finder
+" Fuzzy file finding using fzf
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
+nnoremap <C-p> :Files ~/<CR>
 
 " Provides a much simpler way to use some motions
 Plug 'easymotion/vim-easymotion'
