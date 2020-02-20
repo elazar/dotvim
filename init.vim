@@ -75,10 +75,6 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'w0rp/ale'
 let g:ale_linters = {'javascript': ['eslint']}
 
-" PHP Completion Daemon
-Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
-" Ctrl + ] jump to definition for code element under the cursor
-
 " Markdown support, including fenced code block syntax highlighting
 Plug 'tpope/vim-markdown', { 'for': 'markdown' }
 
