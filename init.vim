@@ -5,9 +5,6 @@ call plug#begin('~/.config/nvim/plugins')
 " User interface
 """""""""""""""""""""""""""""""""""""""""""""""""
 
-" Vertical lines highlighting indentation levels
-Plug 'Yggdroot/indentLine'
-
 " Dark color scheme supported by vim-airline
 Plug 'tomasiser/vim-code-dark'
 
