@@ -77,6 +77,7 @@ let g:ale_linters = {'javascript': ['eslint']}
 
 " Markdown support, including fenced code block syntax highlighting
 Plug 'tpope/vim-markdown', { 'for': 'markdown' }
+let g:markdown_syntax_conceal = 0
 
 " Extends Markdown support to highlight using Github Flavored Markdown
 Plug 'jtratner/vim-flavored-markdown'
