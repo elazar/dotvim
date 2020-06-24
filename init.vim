@@ -61,6 +61,12 @@ map <Leader>k <Plug>(easymotion-k)
 " \j navigate to a line below the cursor
 " \k navigate to a line above the cursor
 
+" Git / GitLab integration
+Plug 'tpope/vim-fugitive'
+Plug 'shumphrey/fugitive-gitlab.vim'
+vnoremap <leader>gb :GBrowse!:%<CR>
+let g:fugitive_gitlab_domains = ['https://gitlab.bluestarsports.io']
+
 """""""""""""""""""""""""""""""
 " Language features and support
 """""""""""""""""""""""""""""""
