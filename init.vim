@@ -50,7 +50,9 @@ Plug 'tpope/vim-commentary'
 " Fuzzy file finding using fzf
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
-nnoremap <C-p> :Files ~/<CR>
+Plug 'junegunn/fzf'
+nnoremap <C-p> :Files<CR>
+set rtp+=/usr/local/opt/fzf
 
 " Provides a much simpler way to use some motions
 Plug 'easymotion/vim-easymotion'
