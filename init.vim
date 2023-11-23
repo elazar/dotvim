@@ -78,8 +78,9 @@ vnoremap <leader>gb :GBrowse!:%<CR>
 Plug 'editorconfig/editorconfig-vim'
 
 " Asynchronous code linting
-Plug 'w0rp/ale'
-let g:ale_linters = {'javascript': ['eslint']}
+Plug 'dense-analysis/ale'
+let g:ale_linters = {'javascript': ['eslint'], 'php': ['phpstan']}
+let g:ale_php_phpstan_configuration = 'phpstan-baseline.neon'
 
 " Markdown support, including fenced code block syntax highlighting
 Plug 'tpope/vim-markdown', { 'for': 'markdown' }
