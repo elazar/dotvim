@@ -68,7 +68,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'shumphrey/fugitive-gitlab.vim'
 vnoremap <leader>gb :GBrowse!:%<CR>
-let g:fugitive_gitlab_domains = ['https://gitlab.bluestarsports.io']
 " \gb get GitHub / GitLab URL to visually highlighted segment
 
 """""""""""""""""""""""""""""""
