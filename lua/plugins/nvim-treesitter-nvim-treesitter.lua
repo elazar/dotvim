@@ -1,19 +1,25 @@
 return {
     "nvim-treesitter/nvim-treesitter",
-    run = ":TSUpdate",
+    branch = "main",
+    lazy = false,
+    build = ":TSUpdate",
     config = function()
-        require("nvim-treesitter.configs").setup({
-            sync_install = false,
-            auto_install = true,
-            -- ensure_installed = { "php", "json" },
-            highlight = {
-                enable = true,
-                -- additional_vim_regex_highlighting = { "php" },
-                additional_vim_regex_highlighting = false,
-            },
-            indent = {
-                enable = true,
-            },
+        local ts = require("nvim-treesitter")
+
+        vim.api.nvim_create_autocmd("FileType", {
+            callback = function(ev)
+                local lang = vim.treesitter.language.get_lang(ev.match) or ev.match
+
+                if vim.list_contains(ts.get_available(), lang)
+                    and not vim.list_contains(ts.get_installed(), lang) then
+                    ts.install({ lang }):wait(120000)
+                end
+
+                local ok = pcall(vim.treesitter.start)
+                if ok then
+                    vim.bo[ev.buf].indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+                end
+            end,
         })
     end,
 }
