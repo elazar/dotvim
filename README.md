@@ -20,29 +20,13 @@ brew install neovim tree-sitter-cli
 
 ## Installation
 
-This config lives outside the default `~/.config/nvim` location, at `~/.config/vim`, so it doesn't collide with any other Neovim config you may already have. Clone it there:
+Clone this config to Neovim's default config location:
 
 ```sh
-git clone git@github.com:elazar/dotvim.git ~/.config/vim
+git clone git@github.com:elazar/dotvim.git ~/.config/nvim
 ```
 
-Neovim needs to be told to use this directory instead of the default one. Set the `NVIM_APPNAME` environment variable to `vim` whenever you launch it:
-
-```sh
-NVIM_APPNAME=vim nvim
-```
-
-To make this permanent, add one of the following to your shell profile (`~/.zshrc`, `~/.bashrc`, etc.):
-
-```sh
-# Make `nvim` always use this config
-export NVIM_APPNAME=vim
-
-# Or, keep the default config untouched and only use this one via a separate alias
-alias vimrc='NVIM_APPNAME=vim nvim'
-```
-
-`NVIM_APPNAME=vim` also redirects Neovim's data, state, and cache directories to `~/.local/share/vim`, `~/.local/state/vim`, and `~/.cache/vim` respectively, so this config's plugins and swap/undo files stay fully isolated from any other Neovim setup.
+Neovim will pick it up automatically — no environment variables or aliases needed.
 
 ## First launch
 
